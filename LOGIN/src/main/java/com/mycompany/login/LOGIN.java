@@ -71,23 +71,14 @@ public class LOGIN {
                             int choice = scanner.nextInt();
                             scanner.nextLine();//
                             
-                            switch(choice);
-                                case 1:
-                                    Register();
-                                case 2:
-                                    login();
-                                    break; // Added break
-                                case 3:
-                                     ForgotPassword();
-                                    break;
-                                case 4:
-                                    System.out.println("Exiting...");
-                                    return;
-                                default:
-                                    System.out.println("Invalid choice Please select 1,2,3, or 4");
-                                    break;
-                                
-                                        
+                            System.out.println("Enter your choice");
+                            int choice = scanner.nextInt();
+                            scanner.nextLine();
+                            
+                            if(choice == 1){
+                                Register();
+                            } else if (choice ==2){
+                                login();
                             }
                         }
                     }
