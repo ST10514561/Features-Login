@@ -6,16 +6,15 @@ public class User {
     private String username;
     private String password;
     private String email;
-    private String secretQuestion;
+    private String cellPhoneNumber;
     private String secretAnswer;
     
     //
-    public User(String username, String password, String email,String secretQuestion, String secretAnswer){
+    public User(String username, String password, String email,String secretCellPhoneNumber, String secretAnswer){
         this.username = username;
         this.password = password;
         this.email = email;
-        this.secretAnswer = secretAnswer;
-        this.secretQuestion = secretQuestion;
+        this.secretcellPhoneNumber = secretcellPhoneNumber;
     }
     
     //Getters and Setters
@@ -25,15 +24,14 @@ public class User {
     public String getEmail(){
         return email;
     }
-    public String getSecretQuestion(){
-        return secretQuestion;
+    public String getSecretcellPhoneNumber(){
+        return name;
     }
-    public String getSecretAnswer(){
-        return secretQuestion;
-    }
+    
     //
     public void setPassword(String password){
         this.password = password;
+        
     }
     
    

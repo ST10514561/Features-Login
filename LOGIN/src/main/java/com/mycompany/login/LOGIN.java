@@ -10,13 +10,13 @@ public class LOGIN {
         Scanner scan = new Scanner(System.in);
         Scanner scanner = new Scanner(System.in);
         
-        Scanner name = new scanner(System.in);
+        Scanner name = new Scanner(System.in);
         System.out.println("Username");
-        String username = name.next().tolowerCase();
+        String username = name.next().toLowerCase();
         
         Scanner pass = new Scanner(System.in);
         System.out.println("Password");
-        String password = pass.next().tolowerCase();
+        String password = pass.next().toLowerCase();
         
         System.out.println("You are logged in");
         
@@ -24,7 +24,7 @@ public class LOGIN {
         System.out.println("Do you want to check this or not select(yes or no) :");
         
         for(User: users){
-            if(user.getUsername().equals(username)&& user.getPassword().equals(password)){
+            if(User.getUsername().equals(username)&& User.getPassword().equals(password)){
                 System.out.println("Login Successful.");
                 return;
             }
@@ -79,7 +79,10 @@ public class LOGIN {
                                 Register();
                             } else if (choice ==2){
                                 login();
-                            }
+                            } else if (choice == 3){
+                                ForgotPassword();
+                                break;
+                                System.out.println("Invalid choice.Please select 1, 2, 3, 4,");
                         }
                     }
                     
